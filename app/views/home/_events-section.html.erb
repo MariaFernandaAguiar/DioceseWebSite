@@ -1,0 +1,22 @@
+<div class="events-section">
+    <div class="section-heading-2">
+        <p class="title"><strong>Formação</strong></p>
+        <span class="heading-border-2"></span>
+    </div>
+    <div class="event-carousel">
+        <div class="grid-events">
+            <div class="grid-element-1">
+                <%= image_tag Event.find(1).url_url,class:"img-grid" %>
+                    <p class="title-events"><strong><%= Event.find(1).title %></strong></p>
+                    <p class="txt-events"><%= Event.find(1).body %></p>
+            </div>
+            <div class="grid-element-2">
+                <%= image_tag Event.find(2).url_url,class:"img-grid" %>
+                    <p class="title-events"><strong><%= Event.find(2).title %></strong></p>
+                    <p class="txt-events"><%= Event.find(2).body %></p>
+            </div>
+        </div>
+        
+    </div>
+         <button class="btn btn-center btn-center-2" type="submit">Veja Todas</button>
+</div>

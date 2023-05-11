@@ -1,0 +1,32 @@
+<div class ="causes-section">
+    <div class="causes-container">
+        <div class="section-heading">
+            <p class="title"><strong>Fotos</strong></p>
+            <span class="heading-border"></span>
+        </div>
+        <div class="grid-causes-wrap">
+        <% @sections.each_with_index do |section, index|%>
+        <%if index == 1%>
+            <div class="grid-item causes-thumb">
+                <div class="linear-img-section"><span class="span-container"></span><%=image_tag section.url_url, class:"img-container" %></div>
+                <div class="font-container">
+                    <p class="txt-container"><strong><%= section.title%></strong></p>
+                    <p class="txt-p-container"><%= section.body %></p>
+                </div>
+                
+            </div>
+        <%else%>
+            <div class="grid-item causes-thumb">
+                <div class="linear-img-section"><span class="span-container"></span><%=image_tag section.url_url, class:"img-container" %></div>
+                <div class="font-container">
+                    <p class="txt-container"><strong><%= section.title%></strong></p>
+                    <p class="txt-p-container"><%= section.body %></p>
+                </div>
+                
+            </div>
+        <%end%>
+        <%end%>
+        <button class="btn btn-center" type="submit">Veja Todas</button>
+        </div>
+    </div>
+</div>

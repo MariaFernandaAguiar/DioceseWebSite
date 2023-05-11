@@ -1,0 +1,43 @@
+<div class="about-section">
+    <div class="back-about">
+        <div class="section-heading">
+            <p class="title"><strong>Blog</strong></p>
+            <span class="heading-border"></span>
+        </div>
+            <div class="about-content">
+                <div class="about-grid-container">
+                    <div class="item-1">
+                        <%= image_tag  About.find(1).url_url,class:"img-about-1"%>
+                            <p class="teste"><%= About.find(1).body%></p>
+                            <button class="btn-about" onclick=" window.location.href = 'blog#blog_index'">Leia Mais </button>
+                    </div>
+                    <div class="item-2">
+                        <%= image_tag  About.find(2).url_url,class:"profile-1"%>
+                        <p class="title-about"><strong><%= About.find(2).title%></strong></p>
+                        <p class="txt-about"><%= About.find(2).body%></p>
+                        <button class="btn-about-2" onclick=" window.location.href = 'blog#blog_index'" >Leia Mais</button>
+                    </div>
+                </div>
+                <div class="about-grid-container-2">
+                    <div class="item-3">
+                        <%= image_tag  About.find(3).url_url,class:"profile-2"%>
+                        <p class="title-about-2"><strong><%= About.find(3).title%></strong></p>
+                        <p class="txt-about-2"><%= About.find(3).body%></p>
+                        <button class="btn-about-3" onclick=" window.location.href = 'blog#blog_index'" >Leia Mais</button>
+                    </div>
+                    <div class="item-4">
+                        <%= image_tag  About.find(4).url_url,class:"img-about-2"%>
+                        <p class="title-about-3"><strong><%= About.find(4).title%></strong></p>
+                        <p class="txt-about-3"><%= About.find(4).body%></p>
+                        <button class="btn-about-4" onclick=" window.location.href = 'blog#blog_index'" >Leia Mais</button>
+                    </div>
+                    <div class="item-5">
+                        <%= image_tag  About.find(5).url_url,class:"img-about-3"%>
+                        <p class="title-about-3"><strong><%= About.find(5).title%></strong></p>
+                        <p class="txt-about-3"><%= About.find(5).body%></p>
+                        <button class="btn-about-5" onclick=" window.location.href = 'blog#blog_index'">Leia Mais</button>
+                    </div>
+                </div> 
+            </div>
+    </div>
+</div>

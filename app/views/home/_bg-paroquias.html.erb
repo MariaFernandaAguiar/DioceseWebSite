@@ -1,0 +1,34 @@
+ <div class="bg-Paroaquias">
+    <div class="paroquias">
+        <div class="section-heading-3">
+            <p class="title"><strong>Paróquias</strong></p>
+            <span class="heading-border-2"></span>
+        </div>
+
+        <div class="grid-par">
+            <div class="par-element-1">
+                <%= image_tag Paroquia.find(1).url_url,class:"img-1" %>
+                <div class="span-paroq"></div>
+                <p class="txt-paroq" ><%= Paroquia.find(1).title %></p><strong class="txt-paroq-1"><%= Paroquia.find(1).local %></strong>
+            </div>
+            <div class="par-element-2">
+                <%= image_tag Paroquia.find(2).url_url,class:"img-2" %>
+                <div class="span-paroq"></div>
+                <p class="txt-paroq" ><%= Paroquia.find(2).title %> </p><strong class="txt-paroq-1"><%= Paroquia.find(2).local %></strong>
+            </div>
+            <div class="par-element-3">
+                <%= image_tag Paroquia.find(3).url_url,class:"img-3" %>
+                <div class="span-paroq"></div>
+                <p class="txt-paroq" ><%= Paroquia.find(3).title %></p><strong class="txt-paroq-1"><%= Paroquia.find(3).local %></strong>                            
+            </div>
+            <div class="par-element-4">
+                <%= image_tag Paroquia.find(4).url_url,class:"img-4" %>
+                <div class="span-paroq"></div>
+                <p class="txt-paroq" ><%= Paroquia.find(4).title %></p><strong class="txt-paroq-1"><%= Paroquia.find(4).local %></strong>
+                
+            </div>
+        </div>                    
+        <button class="btn btn-center btn-center-3" type="submit">Veja Todas</button>
+    </div>
+    
+</div>

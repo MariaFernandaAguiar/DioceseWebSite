@@ -1,0 +1,13 @@
+<div class="dates-section">
+    <div class="dates-wrap">
+     <% @datasection.each do |ds| %>
+        <div class="dates-info"><h4>Próximos Eventos</h4></div>
+        <p class="dates-title"><%= ds.title%></p>
+        <p class="dates-txt" ><%= ds.body%></p>
+        <span class="dates-span"></span>
+        <p class="date-date"><strong><%= ds.data%></strong></p>
+    </div>
+     <%= image_tag ds.url_url,class:"dates-img" %>
+     <%# <div class="dates-img"></div> %>
+    <%end%>
+</div>
